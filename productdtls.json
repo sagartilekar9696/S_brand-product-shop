@@ -1,0 +1,827 @@
+
+[
+          {
+            "Product_ID":1,
+              "SKU":"HEH-9133",
+              "Name":"OXFORD BUTTON-DOWN SHIRT",
+              "Product_URL":"https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+              "Price":2199,
+              "Quantity":1,
+              "variants":[
+                          {
+                            "color": "Red" ,
+                              "id" :  111                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  112                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  113                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  114                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product .",
+              "Rating_Avg":4.2              
+            },  
+            {
+              "Product_ID":2,
+              "SKU":"HEH-2245",
+              "Name":"DRESS SHIRT",
+              "Product_URL":"https://images.unsplash.com/photo-1581655353564-df123a1eb820?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hpcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+              "Price":999,
+              "Quantity":1,
+              "variants":[{
+                              "color": "Red" ,
+                                "id" :  21                     
+                            },
+                            {
+                              "color": "Green" ,
+                              "id" :  22                           
+                            },
+                            {
+                              "color": "Blue" ,
+                              "id" :  23                            
+                            },
+                            {
+                              "color": "Black" ,
+                              "id" :  24                             
+                            }                       
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],              
+              "Description":" All about Product details and information , about variants and sizing and cothing Sociosqu facilisis duis .",
+              "Rating_Avg":4.5              
+            },  
+            {
+              "Product_ID":3,
+              "SKU":"WKS-6016",
+              "Name":"CUBAN COLLAR SHIRT",
+              "Product_URL":"https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+              "Price":1129,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  31                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  32                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  33                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  34                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":4.2              
+            },  
+            {
+              "Product_ID":4,
+              "SKU":"DKO-PROF",
+              "Name":"OVERSHIRT",
+              "Product_URL":"https://images.unsplash.com/photo-1618001789159-ffffe6f96ef2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+              "Price":799,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  41                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  42                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  43                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  44                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":4.9              
+            },  
+            {
+              "Product_ID":5,
+              "SKU":"HEH-2172",
+              "Name":"FLANNEL SHIRT",
+              "Product_URL":"https://images.unsplash.com/photo-1620012150748-c759a494c133?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+              "Price":689,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  51                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  52                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  53                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  54                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":4.6              
+            },  
+            {
+              "Product_ID":6,
+              "SKU":"HEH-2211",
+              "Name":"OFFICE SHIRT",
+              "Product_URL":"https://images.unsplash.com/photo-1516257984-b1b4d707412e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVucyUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
+              "Price":399,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  61                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  62                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  63                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  64                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":3.9              
+            },  
+            {
+              "Product_ID":7,
+              "SKU":"DKO-CAMEL"
+              ,"Name":"CHAMBRAY SHIRT",
+              "Product_URL":"https://images.unsplash.com/photo-1480429370139-e0132c086e2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+              "Price":788,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  71                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" : 72                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  73                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  74                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":5              
+            },  
+            {
+              "Product_ID":8,
+              "SKU":"WKS-5026",
+              "Name":"CLASSIC SHORT SLEEVE SHIRT",
+              "Product_URL":"https://www.fashionbeans.com/wp-content/uploads/2021/11/Luca_Faloni_Moss-Green-Brushed-Cotton-Shirt_Editorial_Hero_Desktop_Made_in_Italy_2.jpeg",
+              "Price":822,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  81                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  82                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  83                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  84                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":5              
+            },  
+            {
+              "Product_ID":9,
+              "SKU":"PCH-8738",
+              "Name":"POLO SHIRT",
+              "Product_URL":"https://www.fashionbeans.com/wp-content/uploads/2021/12/reiss-chambray.jpeg",
+              "Price":562.22,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  91                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  92                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  93                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  94                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":4.5              
+            },  
+            {
+              "Product_ID":10,
+              "SKU":"PCH-8475",
+              "Name":"DENIM SHIRT",
+              "Product_URL":"https://www.fashionbeans.com/wp-content/uploads/2021/11/Corridor-polo.jpeg",
+              "Price":1099,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  101                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  102                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  103                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  104                             
+                          },
+                          {
+                            "color": "yellow"                            
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":4              
+            },  
+            {
+              "Product_ID":11,
+              "SKU":"BCO-SK101"
+              ,"Name":" LINEN SHIRT",
+              "Product_URL":"https://www.fashionbeans.com/wp-content/uploads/2021/12/luca-faloni-denim-shirt.jpeg",
+              "Price":849,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  111                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  112                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  113                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  114                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":5              
+            },  
+            {
+              "Product_ID":12,
+              "SKU":"HEH-2254",
+              "Name":"MANDARIN  COLLAR SHIRT",
+              "Product_URL":"https://www.fashionbeans.com/wp-content/uploads/2021/12/e1e80185_cc18-1764x2048.jpg",
+              "Price":1099,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  121                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  122                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  123                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  124                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":4.7              
+            },  
+            {
+              "Product_ID":13,
+              "SKU":"BCO-2208",
+              "Name":"HENLEY SHIRT",
+              "Product_URL":"https://www.fashionbeans.com/wp-content/uploads/2021/12/e1e80185_cc18-1764x2048.jpg",
+              "Price":1495,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  131                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  132                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  133                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  144                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":4              
+            },  
+            {
+              "Product_ID":14
+              ,"SKU":"KOI-721",
+              "Name":"The-Shoulder Dress",
+              "Product_URL":"https://images.unsplash.com/photo-1548864789-7393f2b4baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+              "Price":2102,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  141                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  142                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  143                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  144                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":3.2              
+            },  
+            {
+              "Product_ID":15,
+              "SKU":"VBH-V5102"
+              ,"Name":"Pants",
+              "Product_URL":"https://images.unsplash.com/photo-1605516384564-6e30d6b4f235?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+              "Price":1599,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  151                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  152                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  153                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  154                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":3.8              
+            },  
+            {
+              "Product_ID":16,
+              "SKU":"SKE-15460",
+              "Name":"oots",
+              "Product_URL":"https://images.unsplash.com/photo-1594201638839-e36ddd34822d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjV8fHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+              "Price":7490,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  161                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  162                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  163                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  164                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":5              
+            },  
+            {
+              "Product_ID":17,
+              "SKU":"PCH-8705",
+              "Name":"Lace Dress",
+              "Product_URL":"https://images.unsplash.com/photo-1588359348347-9bc6cbbb689e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+              "Price":599,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  171                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  172                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  173                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  174                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":5              
+            },  
+            {
+              "Product_ID":18
+              ,"SKU":"PGF-ESS",
+              "Name":"Dress",
+              "Product_URL":"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZHJlc3MlMjBzaGlydHxlbnwwfHwwfHw%3D&w=1000&q=80",
+              "Price":877,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  181                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  182                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  183                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  184                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":4.8              
+            },  
+            {
+              "Product_ID":19,
+              "SKU":"HEH-2223",
+              "Name":"Khadi cotton",
+              "Product_URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs8S9X84LEVC8vuopdoV0vRDVamdT_aDXwuw&usqp=CAU",
+              "Price":1399,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  191                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  192                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  193                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  194                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":4              
+            },  
+            {
+              "Product_ID":20,
+              "SKU":"PGF-RIK",
+              "Name":"Line Star",
+              "Product_URL":"https://images.unsplash.com/photo-1618786177957-29d9b6b26d8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODZ8fHNoaXJ0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+              "Price":1199,
+              "Quantity":1,
+              "variants":[
+                           {
+                            "color": "Red" ,
+                              "id" :  201                     
+                          },
+                          {
+                            "color": "Green" ,
+                            "id" :  202                             
+                          },
+                          {
+                            "color": "Blue" ,
+                            "id" :  203                            
+                          },
+                          {
+                            "color": "Black" ,
+                            "id" :  204                             
+                          }
+                        ],
+              "Product_size":[{
+                          "size":"S"                      
+                        },
+                        {
+                          "size": "M"                            
+                        },
+                        {
+                          "size": "XL"                            
+                        },
+                        {
+                          "size": "XXL"                            
+                        }                        
+                      ],
+              "Description":" All about Product details and info Sociosqu facilisis duis .",
+              "Rating_Avg":5
+            }              
+]
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link href="./websiteTemplate.css" rel="stylesheet" > 
+        <link rel="stylesheet" href="./demo.scss">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./bootstrap-3.3.5-dist/bootstrap-3.3.5-dist/css/bootstrap.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>ORDER PRODUCTS</title>
+        <style>
+ 
+    </style>
+</head>
+  <body>
+
+    <div id="container"> 
+      <div>
+        <header id="header">
+          <div id="image">
+            <div id="title">
+              <img id="header-img" alt="product logo thing" src="https://t4.ftcdn.net/jpg/04/35/01/73/360_F_435017346_o4bUhriCSEcPrJfEFJnmcIMpjlXweV5J.jpg">
+                  <h1 class="heading-title">ORDER <span style="color:hsl(87, 69%, 63%);">PRODUCTS</span></h1>            
+            </div>
+          </div>
+          <div id="nav-box" class=" " >            
+              <div class="topnav" id="myTopnav">
+                <a class="nav-link active" href="#" >PRODUCTS</a>
+                <a class="nav-link" href="#video-wrapper">DEMO</a>
+                <a class="nav-link" href="#">PLANS</a>
+                <a class="nav-link" href="#bottom_text">CONTACT US</a>
+                <a class="nav-link" href="" id="cartDisplay-btn" data-toggle="modal" data-target="#cartModal"><i class="fa" style="font-size:24px">&#xf07a;</i> <span class="add_to_cart_ProductCount"> 0 </span></a>
+                <a href="javascript:void(0);" class="icon" onclick="responsiveToggelFunction()"><i class="fa fa-bars"></i></a>
+              </div>
+          </div>
+        </header>
+      </div>     
+    <div id="body">
+     
+      <div id="main-body">
+        <div id="Product-anchor">
+          <h2>PRODUCT</h2>
+        </div>
+
+       <!-- json file product -->
+
+       <div class="conatiner ">
+        <div class="main-container demo"></div>         
+        
+             <!-- Modal -->
+            
+             
+                  
+              <div id="myModal" class="MoreDetailsmodal">
+
+                <!-- Modal content -->
+                <div class="modal-content_moreInfo">
+                  <div class="modal-header">
+                    <span class="close_modal">&times;</span>                    
+                    <h4>Product Information</h4>
+                  </div>
+                  <div id="moreinfoBox">
+
+                  </div>
+                </div>
+              
+              </div>
+          
+      </div>
+
+
+
+
+
+       <!-- Pagination -->
+      <div id="pagination"></div>
+    </div>
+
+    <!-- DEMO contaniner -->
+       
+        <div class="productPage-container" id="video-wrapper">
+            <div class="demo_video_Title">
+              <h2>S<sub style="font-size:10px;">BRAND</sub> Product Video Overview</h2>
+            </div>
+            <div class="demo_video_iframe">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/D71QGBKzeRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+            </div>
+        <div class="productPage-container" id="models">          
+          <div class="modal fade" id="cartModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Your Shopping Cart
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-image">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Color</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody class="add_To_cart_Details_container">
+                     
+                    </tbody>
+                  </table> 
+                  <div class="d-flex justify-content-end">
+                    <h5>Total: <span class="finalCheckOutPrice text-success">0</span></h5>
+                  </div>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-between">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="info">
+          <h3></h3>
+          <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+            <label for="email" id="email-label"><input id="email" name="email" type="email" placeholder="Enter your email"></input></label>
+            <div id="button-container">
+              <input type="submit" id="submit" value="Start Now!"></input>
+            </div>
+          </form>
+        </div> 
+    
+       <footer class="text-center">
+      <hr>
+      <p id="bottom_text"> <a href=" https://codepen.io/alexsjcho/" target="_blank">S<sub style="font-size:8px;">BRAND</sub> </a>| <a 
+                               href="https://alexsjcho.com" target="_blank">Blog</a> | <a href="https://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin-square"></i></a> | <a 
+     
+     href="https://github.com/alexsjcho" target="_blank"><i 
+class="fa fa-github-square"></i></a> | <a 
+                                                href="https://www.instagram.com/alexsjch0/" target="_blank"><i class="fa fa-instagram"></i></a></p>
+       </footer>
+    </div>
+      
+    </div>
+  </div> 
+        <script src="./websiteTemplate.js"></script>
+
+  </body>
+</html 
+   

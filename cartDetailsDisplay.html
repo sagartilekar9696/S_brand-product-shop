@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        span{
+            width: 50px;
+            height: 20px;
+            background-color: antiquewhite;
+        }
+    </style>
+    <div class="container">
+        <div class="cart-details">
+            
+        </div>
+    </div>
+    <button onClick="showCart()">Show Cart</button>
+    <script>
+        var cart={items:[{
+"productID": "3",
+"Producttitle": "CUBAN COLLAR SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "S"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+},
+{"productID": "1",
+"Producttitle": "Black SHIRT",
+"Price": 1129,
+"productSizeDetails": {
+"size": "M"
+},
+"productColorDetails": {
+"color": "Red",
+"id": 31
+},
+"productImageDetails": "https://images.unsplash.com/photo-1617662408044-cda3ab7134c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG1lbnMlMjBmYXNoaW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+}]}
+
+var cartSection=document.querySelector(".cart-details")
+function generateCartItemDetailsOnCartPage(item){
+    cartSection.innerHTML+=`<div data-product-id="${item.productID}"><span class="product-id">${item.productID}</span><span class="product-title">${item.Producttitle}</span><span class="product-price">${item.Price}</span><span class="product-size">${item.productSizeDetails.size}</span></div>`
+}
+function showCart(){
+     cart.items.map(generateCartItemDetailsOnCartPage)
+}
+
+    </script>
+</body>
+</html>

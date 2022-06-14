@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <title>Title of the document</title>
+
+  <select name="" id="">
+
+    <option value="">1</option>
+    <option value="">1</option>
+    <option value="">1</option>
+    <option value="">1</option>
+    <option value="">1</option>
+  </select>
+  <style>
+    select {
+      width: 80px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: rgb(202, 187, 187);
+      background-size: 10%;
+      background-repeat: no-repeat;
+      background-position: right;
+      right: 10px;
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: aquamarine;
+      display: inline-block;
+    }
+
+    span {
+      width: 50px;
+      height: 50px;
+      background-color: brown;
+    }
+
+    button {
+      padding: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <style>
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+    display: inline-block;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    background: red; /* default color */
+
+    /* "to left" / "to right" - affects initial color */
+    background-size: 200%;
+    }
+
+    ul li.active {
+      background: linear-gradient(to right, black,red);
+    background-position: left;
+    transition: background .5s ease;
+
+    }
+  </style>
+
+  
+  <ul class="productList">
+    <li class="">Maggie</li>
+    <li class="">sandwhich</li>
+    <li class="">samosa</li>
+    <li class="">pizza</li>
+    <li class="">coca cola</li>
+    <li class="">pastries</li>
+  </ul>
+
+
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <button></button>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <h2>Appearance property example</h2>
+  <p>Here is a...</p>
+  <div>Button?</div>
+  <script>
+    document.addEventListener("click", (e) => e.target.matches("div") ? console.log("true") : console.log("false"))
+
+  </script>
+</body>
+<script>
+  var listItems=document.querySelectorAll(".productList li")
+  listItems.forEach(ele => { return ele.addEventListener("click",function addActive(){
+      for (let index = 0; index < listItems.length; index++) {
+        listItems[index].classList.remove("active");
+      }
+      return ele.classList.add("active")
+  })})
+
+</script>
+</html>

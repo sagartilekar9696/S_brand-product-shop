@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p  class="abc" maxlength='140'>hi am am alsoaa thire</p>
+
+
+  <script>
+    let target;
+    const textarea = document.querySelector(".abc").innerHTML;
+        // textarea=target.getAttribute("maxlength");
+        const currentLength = document.querySelector(".abc").innerHTML.length
+        ;
+    //     if (currentLength >= maxLength) {
+    //      console.log("You have reached the maximum number of characters.");
+    // }
+    
+    console.log(currentLength);
+
+
+// textarea.addEventListener("input", event => {
+//     const target = event.currentTarget;
+//     const maxLength = target.getAttribute("maxlength");
+//     const currentLength = target.value.length;
+
+//     if (currentLength >= maxLength) {
+//         return console.log("You have reached the maximum number of characters.");
+//     }
+    
+//     console.log(`${ currentLength} chars left`);
+// });
+  </script>
+</body>
+</html>

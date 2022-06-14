@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+  div{
+  width: 100px;
+  height: 200px;
+  background-color: gray;
+  margin: 10px;
+  }
+  .products-display{
+    display: flex;
+  }
+  
+  </style>
+  <!-- product 1 -->
+  <section class="products-display">
+    <div data-product-id="123">
+      
+        <button class="add-to-cart">Add to cart</button>
+      
+    </div>
+    <!-- product 2 -->
+    <div data-product-id="456">
+      <button class="add-to-cart">Add to cart</button>
+    </div>
+    <!-- product 3 -->
+    <div data-product-id="789">
+      <button class="add-to-cart">Add to cart</button>
+    </div>
+    <!-- product 4 -->
+    <div data-product-id="636">
+      <button class="add-to-cart">Add to cart</button>
+    </div>
+    <!-- product 5 -->
+    <div data-product-id="742">
+      <button class="add-to-cart">Add to cart</button>
+    </div>
+  </section>
+  
+  <script>
+    var addToCartButtons=document.querySelectorAll(".add-to-cart")
+    addToCartButtons.forEach(ele=>ele.addEventListener("click",
+    function addToCart(){
+    var productID= ele.closest("[data-product-id]").getAttribute("data-product-id")
+    console.log(productID);
+  cart.items.push({
+    "productID":productID,
+  "Producttitle":products[productID].title,
+  "Price":products[productID].price
+  })
+  }
+  ))
+var products={
+"123":{id:123,title:"Maggie",price:12,"variats":[]},
+"456":{id:456,title:"ParleG",price:5,"variats":[]},
+"789":{id:789,title:"Coke",price:40,"variats":[]},
+"636":{id:636,title:"Pizza",price:100,"variats":[]},
+"742":{id:742,title:"Thmbsup",price:50,"variats":[]}
+}
+
+
+    var cart={items:[]}
+    
+    
+  </script>
+</body>
+</html>

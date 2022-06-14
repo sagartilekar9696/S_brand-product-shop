@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select name="" id="variants">
+<option value="1234556612334">black</option>
+<option value="1234556613434">white</option>
+<option value="1234523412334">red</option>
+<option value="1234523412334">orange</option>
+<option value="1234556612334">pink</option>
+  </select>
+  <select id="para"></select>
+
+
+
+
+  <script>
+
+      const obj=[
+    {
+      "color": "red",
+      "value": "#f00"
+    },
+    {
+      "color": "green",
+      "value": "#0f0"
+    },
+    {
+      "color": "blue",
+      "value": "#00f"
+    },
+    {
+      "color": "black",
+      "value": "#000"
+    }
+  ]
+      
+      
+      
+  //     [
+  //   {
+  //     "variants_color": {
+  //                         "red":{
+  //                                 "name":"abc",
+  //                                 "id":10
+  //                               },
+  //                        "green":{
+  //                               "name":"abc",
+  //                                 "id":10
+  //                               }
+  //                       }
+  //  }
+  // ]
+
+  for(var key in obj) {
+      console.log(obj[key] );
+        document.querySelector("#para").innerHTML += "<option value=" + key  + ">" + obj[key].color + "</option>"
+    }
+
+
+    function getVariantID(variants){
+     var variantsArray= document.querySelector(variants)
+     var variantsValueByOption= variantsArray[variantsArray.selectedIndex].value
+     
+    return variantsValueByOption;
+    }
+   
+    // on change of variants
+    var variantID;
+document.querySelector("#para").addEventListener("change",function xyz(){
+  variantID=getVariantID("#para")
+  console.log(getVariantID("#para"))
+  productDetailsMapping(variantID)
+  return variantID
+  })
+
+
+  //  var variantid=getVariantID("#variants")
+// console.log(variantid)
+
+function productDetailsMapping(variantID){
+  console.log(variantID)
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+ <style>  
+    body {
+   height: 50vh;
+   display: grid;
+   place-items: center;
+   overflow: hidden;
+}
+.rating {
+   position: relative;
+   width: 180px;
+   background: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: .3em;
+   padding: 5px;
+   margin-top: 40px;
+   overflow: hidden;
+   border-radius: 20px;
+   border: 2px solid black;
+   box-shadow: 0 0 10px #eb9c9c;
+}
+.rating_star {
+   font-size: 1.3em;
+   cursor: pointer;
+   color: #dabd18b2;
+   transition: filter linear .3s;
+}
+.rating_star:hover {
+   filter: drop-shadow(1px 1px 4px gold);
+}
+.emojiFace{
+    display: none;
+    margin-top: -21px;
+    margin-left: 9px;
+
+}
+#emoji{
+    font-size:100px;
+    width: 156px;
+    height: 105px;
+    /* border: 2px solid black; */
+}
+.inputBox{
+    width: 500px;
+    margin-top: 96px;
+    /* border: 2px solid black; */
+}
+.feedback{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#rating1label,#rating2label,#rating3label,#rating4label,#rating5label{        
+    display: none;
+}
+#rating1Input,#rating2Input,#rating3Input,#rating4Input,#rating5Input{
+    display: none;
+}
+
+label{
+    color: red;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+input{
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: outset;
+    display: block;
+    width: 480px;
+}
+
+</style>
+</head>
+<body>
+    <div>
+        <h1>Feedback Rating </h1>
+    </div>
+    <div id="emoji">
+        <p class="emojiFace" id="emoji0" >&#128546</p> 
+        <p class="emojiFace" id="emoji1" >&#128543</p> 
+        <p class="emojiFace" id="emoji2" >&#129320</p> 
+        <p class="emojiFace" id="emoji3" >&#128522</p> 
+        <p class="emojiFace" id="emoji4" >&#128525</p>
+    </div>
+    <div class="rating">        
+       <i class="rating_star far fa-star"></i>
+       <i class="rating_star far fa-star"></i>
+       <i class="rating_star far fa-star"></i>
+       <i class="rating_star far fa-star"></i>
+       <i class="rating_star far fa-star"></i>
+    </div>
+    <div>
+        <div class="inputBox">
+
+                <div  id="">
+                    <label class="feedback" for=""id="rating1label">If you were unhappy with us what can we do to get you to come back?</label>  
+                    <input type="text" id="rating1Input"> 
+                </div>
+                <div  id="">
+                    <label class="feedback" for=""id="rating2label">Which is not on place</label>  
+                    <input type="text" id="rating2Input"> 
+                </div>
+                <div  id="">
+                    <label class="feedback" for=""id="rating3label">Which is not on place</label>  
+                    <input type="text" id="rating3Input"> 
+                </div>
+                <div  id="">
+                    <label class="feedback" for=""id="rating4label">What did you like best about our website?</label>  
+                    <input type="text" id="rating4Input"> 
+                </div> 
+                <div  id="">
+                    <label class="feedback" for=""id="rating5label">What originally attracted you to our website?</label>  
+                    <input type="text" id="rating5Input"> 
+                </div>   
+        </div>
+    </div>
+
+
+  <script>
+     const rating_stars = [...document.getElementsByClassName("rating_star")];
+    console.log( document.getElementById("rating1label").innerHTML)
+    const starActive = "rating_star fas fa-star";
+    const starUnactive = "rating_star far fa-star";
+    var emoji0=document.getElementById("emoji0");
+
+function giveRating(stars){
+
+            let i=0;
+            stars.map((star)=>{
+                star.onclick=()=>{
+                    i=stars.indexOf(star);
+                    
+                    if(star.className!=starActive){
+                        for(i;i>=0;i--){stars[i].className = starActive; 
+                        } 
+                    }else{
+                          for (i; i < stars.length; i++) {
+                              stars[i].className = starUnactive; 
+                            }
+                        }
+
+                        if(stars.indexOf(star)==0){
+                            emoji0.style.display="block"; 
+                            document.getElementById("rating1label").style.display="block";
+                            document.getElementById("rating1Input").style.display="block";
+                            if(star.className!=starActive){
+                                emoji0.style.display="none";  
+                                document.getElementById("rating1label").style.display="none";
+                                document.getElementById("rating1Input").style.display="none";
+                                }
+                        }else{
+                            emoji0.style.display="none"; 
+                            document.getElementById("rating1label").style.display="none";
+                            document.getElementById("rating1Input").style.display="none";
+
+                        }
+                        if(stars.indexOf(star)==1){
+                            document.getElementById("emoji1").style.display="block";
+                            document.getElementById("rating2label").style.display="block";
+                            document.getElementById("rating2Input").style.display="block";
+                            if(star.className!=starActive){
+                                emoji0.style.display="block"; 
+                                document.getElementById("emoji1").style.display="none"; 
+                                document.getElementById("rating2label").style.display="none";
+                                document.getElementById("rating2Input").style.display="none";
+                                document.getElementById("rating1label").style.display="block";
+                               document.getElementById("rating1Input").style.display="block";
+                                } 
+                        }else{
+                            document.getElementById("emoji1").style.display="none"; 
+                            document.getElementById("rating2label").style.display="none";
+                                document.getElementById("rating2Input").style.display="none";
+
+                        }
+                        if(stars.indexOf(star)==2){
+                            document.getElementById("emoji2").style.display="block"; 
+                            document.getElementById("rating3label").style.display="block";
+                            document.getElementById("rating3Input").style.display="block";
+                            if(star.className!=starActive){
+                                document.getElementById("emoji1").style.display="block";
+                                document.getElementById("emoji2").style.display="none"; 
+                                document.getElementById("rating3label").style.display="none";
+                                document.getElementById("rating3Input").style.display="none";
+                                document.getElementById("rating2label").style.display="block";
+                            document.getElementById("rating2Input").style.display="block";
+                                } 
+                        }
+                        else{
+                            document.getElementById("emoji2").style.display="none"; 
+                            document.getElementById("rating3label").style.display="none";
+                                document.getElementById("rating3Input").style.display="none";
+
+                        }
+                        if(stars.indexOf(star)==3){
+                            document.getElementById("emoji3").style.display="block"; 
+                            document.getElementById("rating4label").style.display="block";
+                            document.getElementById("rating4Input").style.display="block";
+                            if(star.className!=starActive){
+                                document.getElementById("emoji2").style.display="block";
+                                document.getElementById("emoji3").style.display="none"; 
+                                document.getElementById("rating4label").style.display="none";
+                                document.getElementById("rating4Input").style.display="none";
+                                document.getElementById("rating3label").style.display="block";
+                               document.getElementById("rating3Input").style.display="block";
+                                } 
+                        }
+                        else{
+                            document.getElementById("emoji3").style.display="none"; 
+                            document.getElementById("rating4label").style.display="none";
+                                document.getElementById("rating4Input").style.display="none";
+
+                        }
+                        if(stars.indexOf(star)==4){
+                            document.getElementById("emoji4").style.display="block"; 
+                            document.getElementById("rating5label").style.display="block";
+                            document.getElementById("rating5Input").style.display="block";
+                            if(star.className!=starActive){
+                                document.getElementById("emoji3").style.display="block";
+                                document.getElementById("emoji4").style.display="none"; 
+                                document.getElementById("rating5label").style.display="none";
+                                document.getElementById("rating5Input").style.display="none";
+                                document.getElementById("rating4label").style.display="block";
+                                document.getElementById("rating4Input").style.display="block";
+                                } 
+                        }
+                        else{
+                            document.getElementById("emoji4").style.display="none";
+                            document.getElementById("rating5label").style.display="none";
+                                document.getElementById("rating5Input").style.display="none"; 
+
+                        }
+                }
+
+
+            });
+}
+
+giveRating(rating_stars);
+
+
+
+
+
+
+  </script>
+</body>
+</html>

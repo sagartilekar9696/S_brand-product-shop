@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Website</title>
+    <style>
+
+.topnav {
+  position: sticky;
+  z-index: 999;
+    top: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  margin: 5px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 9px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+        html {
+             scroll-behavior: smooth;
+        }
+       body {
+				margin: 0;
+        font-family: 'Roboto';font-size: 22px;
+
+			  }
+        .Navbar-container{
+            padding: 20px;  
+            z-index: 2;          
+           position:  fixed; 
+           width: 100%;           
+           background-color: rgb(35, 31, 28);
+        }
+        .navbar-content{
+            padding: 10px;
+            text-decoration: none;
+            background: rgb(146, 59, 50);
+            font-family: 'Roboto', sans-serif;
+            font-size: 17px;
+            text-transform: uppercase;
+            letter-spacing: 3.5px;
+            font-weight: 500;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            perspective: 230px;
+            /* margin-left: 10px; */
+            line-height: 22px;
+
+        }
+        .navbar-content:hover {
+            /* background-color: #2EE59D; */
+            box-shadow: 2px 2px 15px 20px rgba(143, 214, 51, 0.4);
+            color: #fff;
+            transform: translateY(-2px);
+            /* box-shadow: 0px 15px 12px 0px rgba(0,0,0,0.2) */
+        }        
+        .pages{
+
+            padding: 10px 0px;
+        }
+        #homePage{
+          height: 100vh;
+          display: flex;
+          background: url("https://i.pinimg.com/originals/37/1f/db/371fdbaaeddc587ddd4781a2297c5279.jpg");
+          background-size: cover;
+        }
+        #aboutPage{
+            background-color: rgb(212, 227, 49);
+         
+            }
+        #catagoryPage{
+            color: white;
+            background-color: purple;
+            }
+        #contactPage{
+            background-color: violet;
+            }
+        #helpPage{
+            color: rgb(28, 27, 27);
+            background-color: rgb(244, 236, 244);
+            bottom: 30px;
+            }
+            p{
+                padding-left: 10px;
+            }
+            h3{
+                text-align: center;
+                font-size: 30px;
+                padding-top: 30px;
+            }
+            h2{
+              font-size: 26px;
+                margin-top: 47px;;
+                text-align: center;
+            }
+.arrow {
+  border: solid rgb(8, 8, 8);
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  position: fixed;
+  padding: 9px;  
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.pageUP{
+    position: fixed;
+    bottom: 52px;
+    right: 57px;
+}
+        .image-Box{
+
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            padding: 20px;
+        }
+ .box{
+        display: flex;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        }
+.container{
+      background: inherit;
+      border-radius: 6px;
+      padding: 20px 60px 30px 40px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+.container .content{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+}
+.container .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+@media screen and (max-width: 720px) {
+  .container .content {   
+     flex-direction: column; 
+  }
+  
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+  color: #3e2093;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #ea5050;
+}
+.container .content .right-side{
+  width: 75%;
+  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+  background-color: #c1c1c6;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+  
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #5029bc;
+}
+.rating {
+   position: relative;
+   width: 180px;
+   background: transparent;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: .3em;
+   padding: 5px;
+   margin-top: 18px;
+   overflow: hidden;
+   border-radius: 20px;
+   border: 2px solid black;
+   box-shadow: 0 0 10px #eb9c9c;
+}
+.rating_star {
+   font-size: 1.3em;
+   cursor: pointer;
+   color: #dabd18b2;
+   transition: filter linear .3s;
+}
+.rating_star:hover {
+   filter: drop-shadow(1px 1px 4px gold);
+}
+.emojiFace{
+    display: none;
+    margin: 0px;
+
+}
+#emoji{
+    font-size:100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ratingBox{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.feedbackBox{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;   
+}
+.feedback{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#rating1label,#rating2label,#rating3label,#rating4label,#rating5label{        
+    display: none;
+}
+#rating1Input,#rating2Input,#rating3Input,#rating4Input,#rating5Input{
+    display: none;
+}
+label{
+    color: red;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+input{
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: outset;
+    display: block;
+}
+.inputBox{
+  padding: 20px;
+}
+.feedbackButton{
+  border-radius: 10px;
+    font-size: 21px;
+    padding: 13px;
+    margin: 20px;
+    background: lightsalmon;
+}
+.feedbackForm{
+  display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#homepage-main-heading{
+margin: 0px;
+width: 100%;
+text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: #FFF;;
+  overflow-wrap: break-word;
+}
+    </style>
+
+</head>
+<body >
+  <div class="topnav" id="myTopnav">
+        <a href="#"  class="active navbar-content" >HOME</a>
+        <a href="#aboutPage" class="navbar-content">ABOUT</a>
+        <a href="#catagoryPage" class="navbar-content">CATEGORY</a>
+        <a href="#contactPage" class="navbar-content">CONTACT US</a>
+        <a href="#helpPage" class="navbar-content" id="help" >HELP  </a>  
+        <a href="javascript:void(0);" class="icon navbar-content" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+  </div>
+
+    <!-- <Nav class="Navbar-container">
+        <div>
+            <a href="#" class="navbar-content" id="home">HOME</a>
+            <a href="#aboutPage"class="navbar-content " id="about">ABOUT</a>
+            <a href="#catagoryPage" class="navbar-content" id="catagory">CATAGORY</a>
+            <a href="#contactPage" class="navbar-content" id="contact">CONTACT US</a>
+            <a href="#helpPage" class="navbar-content" id="help" >HELP  </a>  
+            <button class="btn-12"><span>Click!</span><span>HELP</span></button>
+            
+        </div>
+    </Nav> -->
+
+<div id="body">
+   <div class="pages" id="homePage" active>
+        <h1 id="homepage-main-heading">BETTER RELATIONSHIPS</h1>
+    <a href="#" class="pageUP"><i class="arrow up"></i></a>
+   </div>
+    <div class="pages" id="aboutPage">
+        <h3>ABOUT</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi eveniet quas quaerat.<br> Vitae doloremque nobis expedita optio corrupti, minima culpa aliquid error numquam facilis aliquam adipisci voluptates eaque. Dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis quae magni impedit molestias quibusdam dicta aliquid ducimus illo quis, ut vero, alias placeat fugiat delectus ratione officiis consequatur earum sed culpa rerum nihil ex nobis illum voluptatem. Eaque reprehenderit numquam ipsam aperiam fuga veniam sequi error incidunt, cumque deserunt commodi esse a inventore suscipit consequatur fugiat est nobis harum beatae quo, atque cupiditate delectus aspernatur. Dolorum culpa blanditiis itaque voluptatem illo, quasi repudiandae sunt impedit maiores aspernatur aliquam laboriosam eaque. Suscipit quas animi vel fugiat neque distinctio quos magnam iure repellendus, iste quae veniam aperiam mollitia praesentium eaque quod vero assumenda fuga labore dolore perspiciatis! Debitis dicta eveniet, dolores, ad voluptatum maxime nesciunt illum atque quas fugit incidunt quo. Quibusdam, aliquid ut. Enim blanditiis aspernatur vero ad fugiat exercitationem debitis quisquam nostrum repellat assumenda expedita placeat, at aperiam. Architecto dolore, delectus iure voluptate non maxime facere? Quisquam adipisci natus velit necessitatibus soluta voluptatum iure impedit sequi, culpa illum eveniet laborum hic corporis mollitia magni optio quasi numquam esse nemo repudiandae obcaecati itaque vel exercitationem. At nihil velit, sit eos consequuntur architecto harum iusto repellendus adipisci vitae. Omnis aliquid sit fuga itaque facere ad, ex eius maiores, sequi praesentium doloribus sunt soluta beatae, ut doloremque atque. Fugit, dicta! Dolorem rerum distinctio libero assumenda ad blanditiis sed fugiat dicta doloremque quod nobis delectus laboriosam quisquam rem quasi, id quo minus ex quam reprehenderit quia aperiam. Cum placeat nesciunt ipsum harum facere ratione accusantium, quos repellendus nam illum tenetur fuga totam provident non veniam cupiditate iure autem expedita voluptatem impedit, consequatur dolorum recusandae perspiciatis distinctio! Rerum vero officia accusamus natus id sequi, beatae libero quam est, accusantium sunt quia! Modi deleniti eaque consequuntur repellendus accusamus inventore impedit aspernatur aut fugiat mollitia nisi velit in ratione repudiandae corrupti quisquam dicta, rerum repellat ipsum minima cupiditate corporis dignissimos quasi. Dolore sequi quod a expedita voluptatum tempore laborum inventore! Corrupti mollitia fugit quisquam vitae ipsum in optio ipsa velit. Est error vitae magni dicta eius officiis aliquid aspernatur officia illo. Ab placeat similique soluta minima corrupti corporis exercitationem labore vero necessitatibus tenetur asperiores nesciunt rem voluptatum dignissimos quis perspiciatis provident, dolorum fugit facilis magnam! Corrupti, dignissimos et illo, rerum labore ullam provident est voluptate explicabo quo, soluta earum. Eius, tenetur beatae, iure esse at laboriosam ad nisi sed, magnam fugiat obcaecati placeat voluptate asperiores minus. Omnis, autem est voluptates aut provident fugit dicta, eveniet temporibus maxime perspiciatis culpa eligendi quo. Earum inventore sed quisquam blanditiis, maiores ut fugit odit obcaecati nesciunt repudiandae dignissimos in ad! Culpa nesciunt accusantium modi delectus debitis, vero porro laborum quasi sequi alias, harum quas necessitatibus nulla vitae ipsam architecto? Rerum aliquid aspernatur ipsum eos est recusandae ullam repudiandae accusantium alias asperiores quam sint, harum quaerat, iusto dicta fugit accusamus dolorem a vero nisi doloremque quos. Itaque eius soluta non quasi est. Sit, nihil. Cumque pariatur amet, dolore natus quia magnam enim ut tenetur laudantium. Est, non magni. Exercitationem voluptas delectus, consectetur, sunt voluptates cupiditate nam praesentium, alias nostrum vel deserunt dolore.</p>
+    </div>
+    <div class="pages"id="catagoryPage">
+        <h3>CATAGORY</h3>
+        <div class="box">
+            <div class="image-Box">
+                <img src="https://w0.peakpx.com/wallpaper/959/164/HD-wallpaper-golden-retriever-puppy-labradors-running-dog-dogs-pets-cute-dogs-small-labrador-golden-retriever-dogs.jpg" alt="myDOG1">
+            </div>
+            <div class="image-Box">
+                <img src="https://www.mwallpapers.com/download-image/775005/1080x717" alt="myDOG2">            
+            </div>
+            <div class="image-Box">
+                <img src="https://c4.wallpaperflare.com/wallpaper/370/711/584/puppies-pc-backgrounds-hd-wallpaper-preview.jpg" alt="myDOG3">            
+            </div>
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi eveniet quas quaerat.<br> Vitae doloremque nobis expedita optio corrupti, minima culpa aliquid error numquam facilis aliquam adipisci voluptates eaque. Dicta.</p>
+    </div>
+    <div class="pages" id="contactPage">
+        <h3>CONTACT US</h3>
+
+        <div class="container">
+            <div class="content">
+              <div class="left-side">
+                <div class="address details">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Address</div>
+                  <div class="text-one">Surkhet, NP12</div>
+                  <div class="text-two">Birendranagar 06</div>
+                </div>
+                <div class="phone details">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic">Phone</div>
+                  <div class="text-one">+0098 9893 5647</div>
+                  <div class="text-two">+0096 3434 5678</div>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">upcome@gmail.com</div>
+                  <div class="text-two">info.upcome@gmail.com</div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have want any from above or any other types of dog and query related to my page, you can send me message from here. It's my pleasure to help you.</p>
+              <form action="#" class="feedbackForm">
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your email">
+                </div>
+               
+                <div class="button">
+                  <input type="button" value="Send Now" >
+                </div>
+              </form>
+            </div>
+            </div>
+          </div>
+
+
+    </div>
+    <div class="pages" id="helpPage">
+        <h3>HELP</h3>
+        <div>
+          <h2> Rating Feedback </h2>
+      </div>
+      <div id="emoji">
+          <p class="emojiFace" id="emoji0" >&#128546</p> 
+          <p class="emojiFace" id="emoji1" >&#128543</p> 
+          <p class="emojiFace" id="emoji2" >&#129320</p> 
+          <p class="emojiFace" id="emoji3" >&#128522</p> 
+          <p class="emojiFace" id="emoji4" >&#128525</p>
+      </div>
+     
+      <div class="ratingBox">
+        <div class="rating">        
+          <i class="rating_star far fa-star"></i>
+          <i class="rating_star far fa-star"></i>
+          <i class="rating_star far fa-star"></i>
+          <i class="rating_star far fa-star"></i>
+          <i class="rating_star far fa-star"></i>
+       </div>
+      </div>
+     
+      <div>
+          <div class="inputBox">
+                   <div class="feedbackBox">
+                      <label class="feedback" for=""id="ratinglabel">What attracted you to our website?</label>  
+                      <input type="text" id="ratingInput"> 
+                  </div>
+                  <div  class="feedbackBox">
+                      <label class="feedback" for=""id="rating1label">If you were unhappy with us what can we do to get you to come back?</label>  
+                      <input type="text" id="rating1Input"> 
+                  </div>
+                  <div  class="feedbackBox">
+                      <label class="feedback" for=""id="rating2label">Which is not on place</label>  
+                      <input type="text" id="rating2Input"> 
+                  </div>
+                  <div  class="feedbackBox">
+                      <label class="feedback" for=""id="rating3label">Which is not on place</label>  
+                      <input type="text" id="rating3Input"> 
+                  </div>
+                  <div  class="feedbackBox">
+                      <label class="feedback" for=""id="rating4label">What did you like best about our website?</label>  
+                      <input type="text" id="rating4Input"> 
+                  </div> 
+                  <div  class="feedbackBox">
+                      <label class="feedback" for=""id="rating5label">What originally attracted you to our website?</label>  
+                      <input type="text" id="rating5Input"> 
+                  </div>   
+                  <div class="feedbackBox">
+                    <button class="feedbackButton">Submit</button>
+                  </div>
+          </div>
+      </div>
+  
+    </div>
+</div>  
+
+    <script>
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+  const rating_stars = [...document.getElementsByClassName("rating_star")];
+    console.log( document.getElementById("rating1label").innerHTML)
+    const starActive = "rating_star fas fa-star";
+    const starUnactive = "rating_star far fa-star";
+    var emoji0=document.getElementById("emoji0");
+
+function giveRating(stars){
+
+            let i=0;
+            stars.map((star)=>{
+                star.onclick=()=>{
+                    i=stars.indexOf(star);
+                    
+                    if(star.className!=starActive){
+                        for(i;i>=0;i--){stars[i].className = starActive; 
+                        } 
+                    }else{
+                          for (i; i < stars.length; i++) {
+                              stars[i].className = starUnactive; 
+                            }
+                        }
+
+                        if(stars.indexOf(star)==0){
+                            emoji0.style.display="block"; 
+                            document.getElementById("rating1label").style.display="block";
+                            document.getElementById("rating1Input").style.display="block";
+                            if(star.className!=starActive){
+                                emoji0.style.display="none";  
+                                document.getElementById("ratinglabel").style.display="block";
+                                document.getElementById("ratingInput").style.display="block";
+                                document.getElementById("rating1label").style.display="none";
+                                document.getElementById("rating1Input").style.display="none";                                
+                                }
+                        }else{
+                            emoji0.style.display="none"; 
+                            document.getElementById("rating1label").style.display="none";
+                            document.getElementById("rating1Input").style.display="none";
+                            if(stars.indexOf(star)==0 && star.className!=starActive){
+                              document.getElementById("ratingInput").style.display="block";
+                              document.getElementById("ratinglabel").style.display="block";
+                            }
+                            
+                        }
+                        if(stars.indexOf(star)==1){
+                            document.getElementById("emoji1").style.display="block";
+                            document.getElementById("rating2label").style.display="block";
+                            document.getElementById("rating2Input").style.display="block";
+                            if(star.className!=starActive){
+                                emoji0.style.display="block"; 
+                                document.getElementById("emoji1").style.display="none"; 
+                                document.getElementById("rating2label").style.display="none";
+                                document.getElementById("rating2Input").style.display="none";
+                                document.getElementById("rating1label").style.display="block";
+                               document.getElementById("rating1Input").style.display="block";
+                                } 
+                        }else{
+                            document.getElementById("emoji1").style.display="none"; 
+                            document.getElementById("rating2label").style.display="none";
+                                document.getElementById("rating2Input").style.display="none";
+                                document.getElementById("ratinglabel").style.display="none";
+                                document.getElementById("ratingInput").style.display="none";
+
+
+
+                        }
+                        if(stars.indexOf(star)==2){
+                            document.getElementById("emoji2").style.display="block"; 
+                            document.getElementById("rating3label").style.display="block";
+                            document.getElementById("rating3Input").style.display="block";
+                            if(star.className!=starActive){
+                                document.getElementById("emoji1").style.display="block";
+                                document.getElementById("emoji2").style.display="none"; 
+                                document.getElementById("rating3label").style.display="none";
+                                document.getElementById("rating3Input").style.display="none";
+                                document.getElementById("rating2label").style.display="block";
+                            document.getElementById("rating2Input").style.display="block";
+                                } 
+                        }
+                        else{
+                            document.getElementById("emoji2").style.display="none"; 
+                            document.getElementById("rating3label").style.display="none";
+                                document.getElementById("rating3Input").style.display="none";
+                                document.getElementById("ratinglabel").style.display="none";
+                                document.getElementById("ratingInput").style.display="none";
+
+
+
+                        }
+                        if(stars.indexOf(star)==3){
+                            document.getElementById("emoji3").style.display="block"; 
+                            document.getElementById("rating4label").style.display="block";
+                            document.getElementById("rating4Input").style.display="block";
+                            if(star.className!=starActive){
+                                document.getElementById("emoji2").style.display="block";
+                                document.getElementById("emoji3").style.display="none"; 
+                                document.getElementById("rating4label").style.display="none";
+                                document.getElementById("rating4Input").style.display="none";
+                                document.getElementById("rating3label").style.display="block";
+                               document.getElementById("rating3Input").style.display="block";
+                                } 
+                        }
+                        else{
+                            document.getElementById("emoji3").style.display="none"; 
+                            document.getElementById("rating4label").style.display="none";
+                                document.getElementById("rating4Input").style.display="none";
+                                document.getElementById("ratinglabel").style.display="none";
+                                document.getElementById("ratingInput").style.display="none";
+
+
+
+                        }
+                        if(stars.indexOf(star)==4){
+                            document.getElementById("emoji4").style.display="block"; 
+                            document.getElementById("rating5label").style.display="block";
+                            document.getElementById("rating5Input").style.display="block";
+                            if(star.className!=starActive){
+                                document.getElementById("emoji3").style.display="block";
+                                document.getElementById("emoji4").style.display="none"; 
+                                document.getElementById("rating5label").style.display="none";
+                                document.getElementById("rating5Input").style.display="none";
+                                document.getElementById("rating4label").style.display="block";
+                                document.getElementById("rating4Input").style.display="block";
+                                } 
+                        }
+                        else{
+                            document.getElementById("emoji4").style.display="none";
+                            document.getElementById("rating5label").style.display="none";
+                                document.getElementById("rating5Input").style.display="none"; 
+                                document.getElementById("ratinglabel").style.display="none";
+                                document.getElementById("ratingInput").style.display="none";
+
+                        }
+                }
+
+
+            });
+}
+
+giveRating(rating_stars);
+
+var aaa=document.querySelector("#body")
+       aaa.addEventListener("click",()=>{return document.querySelector("#myTopnav").classList.remove("responsive")})
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<select name="datas" id="datas"></select>
+<script>
+
+    html = "";
+    obj = {
+        "1" : "Name",
+        "2": "Age",
+        "Gender" : {"male":{"1" : "Name1",
+        "2": "Age1"},"female":{"1" : "Name2",
+        "2": "Age2"}}
+    }
+    for(var key in obj) {
+      console.log(obj[key] );
+        html += "<option value=" + key  + ">" +obj[key] + "</option>"
+    }
+    document.getElementById("datas").innerHTML = html;
+
+</script>
