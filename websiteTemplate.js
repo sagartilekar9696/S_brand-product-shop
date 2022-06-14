@@ -213,7 +213,8 @@ const displayItems = async (page = 1, perPage = 2) => {
                   // alert("Product Added Successfully.")
 
               }
-
+              
+              // final checkout price
               getTotalCartPrice();
 
               return status;
@@ -343,6 +344,8 @@ displayItems(1, perPage)
                     cart.productitems[index].ProductTotalPriceDetails=productTotalPrice;                
                   }              
             }    
+
+            // final checkout price
             getTotalCartPrice();
             
         
