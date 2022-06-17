@@ -33,7 +33,7 @@
                 <a class="nav-link" href="#video-wrapper">DEMO</a>
                 <a class="nav-link" href="#">PLANS</a>
                 <a class="nav-link" href="#bottom_text">CONTACT US</a>
-                <a class="nav-link" href="" id="cartDisplay-btn" data-toggle="modal" data-target="#cartModal"><i class="fa" style="font-size:24px">&#xf07a;</i> <span class="add_to_cart_ProductCount"> 0 </span></a>
+                <a class="nav-link"  id="cartDisplay-btn"  data-toggle="modal" data-target="#cartModal"><i class="fa" style="font-size:24px">&#xf07a;</i> <span class="add_to_cart_ProductCount"> 0 </span></a>
                 <a href="javascript:void(0);" class="icon" onclick="responsiveToggelFunction()"><i class="fa fa-bars"></i></a>
               </div>
           </div>
@@ -52,8 +52,6 @@
         <div class="main-container demo"></div>         
         
              <!-- Modal -->
-            
-             
                   
               <div id="myModal" class="MoreDetailsmodal">
 
@@ -89,6 +87,9 @@
             <div class="demo_video_iframe">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/D71QGBKzeRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
             </div>
+
+
+   <!-- Product cart modal -->
         <div class="productPage-container" id="models">          
           <div class="modal fade" id="cartModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
@@ -115,7 +116,7 @@
                         <th scope="col">Actions</th>
                       </tr>
                     </thead>
-                    <tbody class="add_To_cart_Details_container">
+                    <tbody class="add_To_cart_Details_container" id="add_To_cart_Details_container">
                      
                     </tbody>
                   </table> 
@@ -124,24 +125,132 @@
                   </div>
                 </div>
                 <div class="modal-footer border-top-0 d-flex justify-content-between">
+                  <!-- <button type="button" class="btn btn-success checkOut-Button">Checkout</button> -->
+                  <button type="button" class="btn btn-success checkOut-Button" data-toggle="modal" data-target=".bd-example-modal-xl">Checkout</button>
+
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-success">Checkout</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+
+<!-- product checkout modal -->
+        
+
+        <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+          <div class="checkout-modal-dialog modal-xl">
+            <div class="checkout_modal_conetent">
+              <div class="modal-header border-bottom-0">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  Your Shopping Cart
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="row" >
+                <div class="col-75">
+                  <div class="checkOut-Container">
+                   
+                    <form action="/action_page.php">
+                    
+                      <div class="row">
+                        <div class="col-50">
+                          <h3>Billing Address</h3>
+                          <label class="checkOutBox_Label" for="fname"><i class="fa fa-user"></i> Full Name</label>
+                          <input class="checkOutBox_Input" type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                          <label class="checkOutBox_Label" for="email"><i class="fa fa-envelope"></i> Email</label>
+                          <input class="checkOutBox_Input" type="text" id="email" name="email" placeholder="john@example.com">
+                          <label class="checkOutBox_Label" for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                          <input class="checkOutBox_Input" type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                          <label class="checkOutBox_Label" for="city"><i class="fa fa-institution"></i> City</label>
+                          <input class="checkOutBox_Input" type="text" id="city" name="city" placeholder="New York">
+
+                          <div class="row">
+                            <div class="col-50">
+                              <label class="checkOutBox_Label" for="state">State</label>
+                              <input class="checkOutBox_Input" type="text" id="state" name="state" placeholder="NY">
+                            </div>
+                            <div class="col-50">
+                              <label class="checkOutBox_Label" for="zip">Zip</label>
+                              <input class="checkOutBox_Input" type="text" id="zip" name="zip" placeholder="10001">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-50">
+                          <h3>Payment</h3>
+                          <label class="checkOutBox_Label" for="fname">Accepted Cards</label>
+                          <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                          </div>
+                          <label class="checkOutBox_Label" for="cname">Name on Card</label>
+                          <input class="checkOutBox_Input" type="text" id="cname" name="cardname" placeholder="John More Doe">
+                          <label class="checkOutBox_Label" for="ccnum">Credit card number</label>
+                          <input class="checkOutBox_Input" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                          <label class="checkOutBox_Label" for="expmonth">Exp Month</label>
+                          <input class="checkOutBox_Input" type="text" id="expmonth" name="expmonth" placeholder="September">
+                          <div class="row">
+                            <div class="col-50">
+                              <label class="checkOutBox_Label" for="expyear">Exp Year</label>
+                              <input class="checkOutBox_Input" type="text" id="expyear" name="expyear" placeholder="2018">
+                            </div>
+                            <div class="col-50">
+                              <label class="checkOutBox_Label" for="cvv">CVV</label>
+                              <input class="checkOutBox_Input" type="text" id="cvv" name="cvv" placeholder="352">
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <label>
+                        <input class="checkOutBox_Input" type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                      </label>
+                      <input class="checkOutBox_Input" type="submit" value="Continue to checkout" class="CheckOutBtn">
+                    </form>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                  </div>
+                </div>
+                <div class="col-25">
+                  <div class="checkOut-Container">
+                    <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                    <p><span href="#">Product 1</span> <span class="price">$15</span></p>
+                    <p><span href="#">Product 2</span> <span class="price">$5</span></p>
+                    <p><span href="#">Product 3</span> <span class="price">$8</span></p>
+                    <p><span href="#">Product 4</span> <span class="price">$2</span></p>
+                    <hr>
+                    <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                  </div>
+                </div>`
+
+              </div> 
+            </div>
+          </div>
+        </div>
+
+
         <div id="info">
           <h3></h3>
           <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
-            <label for="email" id="email-label"><input id="email" name="email" type="email" placeholder="Enter your email"></input></label>
+            <label for="email" id="email-label"><input  id="email" name="email" type="email" placeholder="Enter your email"></input class="checkOutBox_Input"></label>
             <div id="button-container">
-              <input type="submit" id="submit" value="Start Now!"></input>
+              <input  type="submit" id="submit" value="Start Now!"></input class="checkOutBox_Input">
             </div>
           </form>
         </div> 
     
+          <div id="output">
+            <P>Hello</P>
+          </div>
+
+            
+
        <footer class="text-center">
       <hr>
       <p id="bottom_text"> <a href=" https://codepen.io/alexsjcho/" target="_blank">S<sub style="font-size:8px;">BRAND</sub> </a>| <a 

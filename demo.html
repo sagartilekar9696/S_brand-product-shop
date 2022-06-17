@@ -5,35 +5,24 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    p{
+      display: none;
+    }
+  </style>
 </head>
 <body>
-  <p  class="abc" maxlength='140'>hi am am alsoaa thire</p>
+  
+  <p id="p1">hi i am 2nd</p>
+  <button class="btn1">button1</button>
+  <button class="btn2">button2</button>
 
+<script>
 
-  <script>
-    let target;
-    const textarea = document.querySelector(".abc").innerHTML;
-        // textarea=target.getAttribute("maxlength");
-        const currentLength = document.querySelector(".abc").innerHTML.length
-        ;
-    //     if (currentLength >= maxLength) {
-    //      console.log("You have reached the maximum number of characters.");
-    // }
-    
-    console.log(currentLength);
+document.querySelector(".btn1").addEventListener("click",(e)=>{e.addEventListener})
+document.querySelector(".btn2").addEventListener("click",()=>{document.getElementById("p1").style.display="block"})
 
+</script>
 
-// textarea.addEventListener("input", event => {
-//     const target = event.currentTarget;
-//     const maxLength = target.getAttribute("maxlength");
-//     const currentLength = target.value.length;
-
-//     if (currentLength >= maxLength) {
-//         return console.log("You have reached the maximum number of characters.");
-//     }
-    
-//     console.log(`${ currentLength} chars left`);
-// });
-  </script>
 </body>
 </html>
